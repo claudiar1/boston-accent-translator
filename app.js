@@ -46,7 +46,10 @@ function bostonify() {
       newWord = word.replacementWord;
       break;
     } else {
-      newWord = inputVal.replace(/ar/g, "ah").replace(/er/g, "ah");
+      newWord = inputVal
+        .replace(/ar/g, "ah")
+        .replace(/er/g, "ah")
+        .replace(/ing/g, "in'");
     }
   }
   document.getElementById("output-area").innerHTML = `${newWord}`;
