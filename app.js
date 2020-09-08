@@ -64,4 +64,11 @@ input.addEventListener("keyup", function (event) {
 input.addEventListener("click", () => {
   input.value = "";
   document.getElementById("output-area").innerHTML = "";
+  console.log(input.value);
+});
+
+input.addEventListener("keyup", () => {
+  if (input.value === "") {
+    document.getElementById("output-area").innerHTML = "";
+  }
 });
